@@ -27,11 +27,11 @@ a {
   text-decoration: none;
   background-color: #555;
   color: #fff;
-  padding: .5em .75em;
   border-radius: 4px;
   text-align: center;
   display: inline-block;
   font-weight: bold;
+  padding: .5em .75em;
 }
 
 .btn {
@@ -51,7 +51,7 @@ a:hover {
 
 p:first-of-type {
   padding-top: .3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
 }
 
 p:last-of-type {
@@ -65,14 +65,14 @@ section {
   max-width: 50em;
 }
 
-h1, p {
-  margin: 0;
-  padding: 1rem;
-}
-
 .img-flex {
   width: 100%;
   display: block;
+}
+
+h1, p {
+  margin: 0;
+  padding: 1rem;
 }
 
 header {
@@ -81,43 +81,43 @@ header {
 
 @media only screen and (min-width: 38em) {
 
-    html {
-      font-size: 100%;
-      line-height: 1.4;
-    }
-
-    body {
-      padding-top: 1rem;
-    }
-
-    .content .image {
-      display: inline-block;
-      width: 48.5%;
-      vertical-align: middle;
-     }
-
-     section {
-       text-align: center;
-     }
-
-    .content {
-      padding-left: .2em;
-      text-align: left;
-    }
-
-    header {
-      margin-left: 1rem
-    }
-
-    .image {
-      width: 50.5%;
-    }
-
-    p:first-of-type {
-      padding-top: .4em
-    }
-
+  html {
+    font-size: 110%;
+    line-height: 1.4;
   }
+
+  body {
+    padding-top: 1rem;
+  }
+
+  .content, .image {
+    display: inline-block;
+    width: 48.5%;
+    vertical-align: middle;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .content {
+    padding-left: .2em;
+    text-align: left;
+  }
+
+  header {
+    margin-left: 1rem;
+  }
+
+  .image {
+    width: 50.5%;
+  }
+
+  p:first-of-type {
+    padding-top: .4em;
+  }
+
+}
 
 @media only screen and (min-width: 60em) {
 
@@ -147,6 +147,7 @@ header {
   p:last-of-type {
     padding-bottom: .7em;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
