@@ -5,30 +5,154 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   box-sizing: border-box;
   background-color: #e2e2e2;
   font-family: sans-serif;
-  padding-left: 1rem;
-
-  }
+}
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-div .btn a {
+body {
+  width: 100%;
+  margin: 0;
+}
+
+a {
   text-decoration: none;
   background-color: #555;
-  color: #e2e2e2;
-  padding: 1rem;
+  color: #fff;
+  padding: .5em .75em;
   border-radius: 4px;
-}
-
-section .content .img-flex {
+  text-align: center;
   display: inline-block;
-  width: 48%;
+  font-weight: bold;
 }
 
-h1 {
+.btn {
+  text-align: left;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+
+a:hover {
+  background-color: #000;
+}
+
+.content {
+  padding: 0 1rem 1.5rem;
+  text-align: left;
+}
+
+p:first-of-type {
+  padding-top: .3rem;
+  padding-bottom: 1rem;
+}
+
+p:last-of-type {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+}
+
+h1, p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+header {
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+    html {
+      font-size: 100%;
+      line-height: 1.4;
+    }
+
+    body {
+      padding-top: 1rem;
+    }
+
+    .content .image {
+      display: inline-block;
+      width: 48.5%;
+      vertical-align: middle;
+     }
+
+     section {
+       text-align: center;
+     }
+
+    .content {
+      padding-left: .2em;
+      text-align: left;
+    }
+
+    header {
+      margin-left: 1rem
+    }
+
+    .image {
+      width: 50.5%;
+    }
+
+    p:first-of-type {
+      padding-top: .4em
+    }
+
+  }
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  body {
+    padding-top: 2em;
+  }
+
+  .content {
+    padding-left: .3em;
+    padding-top: 2rem;
+  }
+
+  a {
+    margin-top: .8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  p:first-of-type {
+    padding-top: .5em;
+  }
+
+  p:last-of-type {
+    padding-bottom: .7em;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
 
 }
